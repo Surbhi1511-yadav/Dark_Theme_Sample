@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(red, green, hsl(73, 40%, 62%), alpha);
+}
+.logo{
+    padding-left: 0px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: -8%;
+    margin-top:-1%;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+nav ul li a:hover{
+    color: #ff4321;
+}
+:root{
+        --primary-color:#edf2fc;
+        --secondary-color: #212121;
+}
+.dark-theme{
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 12%;
+}
+.info h1{
+    font-size: 60px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+span{
+    color: #ff4321;
+}
+.info p{
+    color:var(--secondary-color);
+    line-height: 25px;
+}
+.info a{
+    background: var(--secondary-color);
+    padding: 10px 18px;
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+.info a:hover{
+    color: #ff4321;
+    background: #fff;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.img-box img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    cursor: pointer;
+}
+.img-box:hover .back-img{
+    bottom: 40px;
+}
+.img-box:hover .main-img{
+    left: 54%;
+}
+.social-links{
+    margin-left: 8%;
+    margin-top: 100px;
+}
+.social-links a{
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.social-links a:hover{
+    color: #ff4321;
+}
